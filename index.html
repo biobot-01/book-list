@@ -21,6 +21,8 @@
     <div class="container">
       <div class="columns">
         <div class="column">
+          <h2 class="title">Add Book</h2>
+
           <form id="bookForm">
             <div class="field">
               <label class="label" for="title">Title</label>
@@ -37,10 +39,42 @@
                 <input class="input" type="text" for="author" id="author" placeholder="Author Name">
               </div>
             </div>
+
+            <div class="field">
+              <label class="label" for="isbn">ISBN</label>
+    
+              <div class="control">
+                <input class="input" type="text" for="isbn" id="isbn" placeholder="Author Name">
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <button class="button is-link">Add Book</button>
+              </div>
+            </div>
           </form>
+
+          <hr>
+
+          <table class="table is-fullwidth">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+              </tr>
+            </thead>
+
+            <tbody id="bookList">
+
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </section>
+
+  <script src="app-es5.js"></script>
 </body>
 </html>
