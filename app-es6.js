@@ -70,7 +70,7 @@ class Store {
     const books = Store.getBooks();
 
     books.forEach(book => {
-      const ui = new UI;
+      const ui = new UI();
       // Add book to ui
       ui.addBookToList(book);
     });
